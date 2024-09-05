@@ -1,0 +1,24 @@
+p{
+    color: green;
+    font-family:Arial, Helvetica, sans-serif;font-weight: bold;
+    font-style: italic;
+    text-align: right;
+}
+h1{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 100px;
+    color:rgba(177, 55, 100, 0.849);
+    /* margin-bottom: 10px; this is a comment */
+    padding-bottom: 5px;
+   /*  margin-top: 0; this is a comment*/
+    margin: 50px 0 10px 0;
+    padding: 50px 0 5px 0;
+    line-height: 60px;
+}
+h2{color: rgba(191, 183, 70, 0.847);
+    text-align: left;
+}
+body{
+    background-color: yellow;
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
