@@ -17,8 +17,11 @@ h2{color: rgba(191, 183, 70, 0.847);
     text-align: left;
 }
 body{
-    background-color: yellow;
+    background-color: rgb(243, 216, 237);
     width: 1000px;
     margin: 0 auto 0 auto;
     text-align: center;
+}
+h3{
+    text-align: left;
 }
