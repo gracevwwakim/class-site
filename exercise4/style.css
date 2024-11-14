@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: rgb(81, 85, 202);
+}
+
+#intro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 900;
+    opacity: 0.8;
+    padding: 40px;
+}
+h1{
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+h2{
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h3 {
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#wholecontainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pink{
+    opacity: 0.0;
+}
+.blue{
+    opacity: 0.0;
+}
+#splatter {
+    opacity: 0.0;
+}
+
+
+@media screen and (max-width:1000px) {
+    #intro{
+        display: none;
+    }
+    #splatter {
+        display: none;
+    }
+    #paint-brush {
+        width: 400px;
+        height: 400px;
+        background-image: url(images/paintbrushA.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        z-index: 999;
+        top: 20%;
+        right: 10%;
+        animation-name: brush;
+        animation-duration: 0.5s;
+        animation-timing-function:ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+    }
+    
+    .pink {
+        width: 600px;
+        height: 600px;
+        opacity: 1.0;
+        background-image: url(images/pinkpaintblob.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        text-align: center;
+        z-index: 300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    
+    }
+    h2{
+        color: black;
+        z-index: 400;
+    }
+    .blue {
+        display: none;
+    }
+  
+}
+@keyframes brush {
+    0% {
+        rotate: 230deg;
+    }
+    100% {
+        rotate: 200deg;
+    }
+}
+@media screen and (max-width:800px) {
+#splatter {
+    display: none;
+}
+#paint-brush {
+    z-index: 900;
+    width: 400px;
+    height: 400px;
+    top: 20%;
+    right: 10%;
+}
+#wholecontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blue {
+    width: 100%;
+    height: 100vh;
+    opacity: 1.0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bluepaintblob.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 800;
+}
+.pink {
+    width: 700px;
+    height: 700px;
+    background-image: url(images/pinkpaintblob.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+h2 {
+    display: none;
+}
+
+}
+
+@media screen and (max-width:500px) {
+    .pink {
+        display: none;
+    }
+    .blue {
+        display: none;
+    }
+    #paint-brush {
+        display: none;
+    }
+    #splatter {
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/splatter.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        opacity: 0.8;
+    }
+    h4 {
+        text-align: center;
+        font-weight: 100vw;
+        font-size: 60px;
+        font-style: oblique;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        animation: gorgtext 1.5s ease-in-out infinite alternate;
+        animation-delay: 0;
+    }
+}
+@keyframes gorgtext {
+    0% {
+        opacity: 0.4;
+
+    }
+    50% {
+        opacity: 0.8;
+        color: rgb(5, 16, 39);
+    }
+    100% {
+        opacity: 1.0;
+        font-size: 15vw;
+        color: rgb(5, 16, 39);
+    }
+}
+
+
+
+
+
