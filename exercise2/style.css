@@ -1,30 +1,76 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
     background-color: rgb(200, 211, 176);
+    width: 100%;
 }
-
-h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 70px;
-    color:rgb(19, 139, 31);
+#title {
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
-
-h2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
-
+h1 {
+    font-family: "Work Sans";
+    font-size: 100px;
+    color:green;
 }
-
-p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+h2 {
+    font-family: "Ysabeau";
+    font-size: 45px;
 }
-
-img{
+h3 {
+    font-family: "Ysabeau";
+    color:rgb(139, 19, 121);
+    font-size: 50px;
+}
+p {
+    font-family: "Work Sans";
+    font-size: 22px;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 100px;
+    border-bottom: solid black 2px;
+}
+.principle {
+    justify-content: center;
+    position: relative;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 15px;
+    width: 50%;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+}
+img {
     width: 400px;
     height: 300px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
-
-h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+a {
+    font-family: "Shippori Mincho";
     font-size: 50px;
+    align-items: center;
+    display: inline-block
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
