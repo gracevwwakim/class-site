@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*TITLE PAGE*/
+#title {
+    background-image: url(images/background3.png);
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    background-repeat: no-repeat;
+}
+#titlecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 10px;
+    text-align: center;
+}
+h1 {
+    color: rgb(32, 52, 112);
+    font-family: "Alice";
+    font-weight: 800;
+    font-size: 10vw;
+    line-height: 1;
+    font-style: normal;
+    font-weight: 800;
+}
+h2 {
+    color: rgb(30, 37, 128);
+    font-size: 3vw;
+    font-family: "Ysabeau", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+h3 {
+    font-size: 20px;
+    font-family: "Shippori Mincho";
+    color: rgb(133, 189, 191);
+    font-weight: 500;
+}
+h4 {
+    color:rgb(254, 242, 237);
+    font-size: 4vw;
+    font-family: "Shippori Mincho";
+    font-weight: 800;
+    line-height: 1;
+    font-style: small-caps;
+    text-align: center;
+}
+p {
+    color: rgb(180, 203, 231);
+    font-size: 2.5vw;
+    font-family: "Shippori Mincho";
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    font-size: 20px;
+    font-family: "Ysabeau", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    display: block;
+    background-color:rgb(227, 114, 131);
+    color: rgb(16, 84, 167);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    transition: all 0.5s;
+    font-style: normal;
+}
+.btn:hover {
+    background-color:rgb(234, 153, 166);
+    color: rgb(7, 50, 101);
+
+}
+
+/*INGREDIENT PAGES*/
+#page1-sugar{
+    background-image: url(images/sugarcopy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+#page2-butter {
+    background-image: url(images/butter\ copy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+}
+#page3-eggs{
+    background-image: url(images/eggs4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+#page4-flour {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/flour2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#page5-chocolate {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#page7-perfect {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.div1{ 
+    grid-area: 1 / 1 / 2 / 3; 
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(43, 58, 103);
+    border: rgb(133, 10, 10) 4px dotted;
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: 40px 60px;
+    
+    position: relative;
+}
+.div2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+.div3 { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+.div2,
+.div3{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 20px;
+    transition: all 0.5s;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+margin-inline: 50px;
+    padding: 5px;
+    background-color:rgb(254, 241, 189);
+
+}
+.div2 a,
+.div3 a{
+    text-decoration: none;
+    color: rgb(32, 52, 112);
+    font-size: 2vw;
+    font-family: "Shippori Mincho";
+    font-weight: 400;
+}
+.div2:hover,
+.div3:hover {
+    background-color:rgb(235, 230, 208);
+}
+a:hover{
+    color:rgb(133, 10, 10);
+
+}
+.step-number {
+    text-align: center;
+}
+.textbox {
+    background-color:rgb(43, 58, 103);
+    border: rgb(133, 10, 10) 2px dotted;
+    padding: 10px;
+    text-align: center;
+    margin: 80px;
+    padding: 50px;
+    width: 80%;
+    height: 80%;
+}
+
+/*WRONG PAGE*/
+#badguess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.wrongtext {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.grandma {
+    background-image: url(images/grandma1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    border: royalblue 2px dotted;
+}
+.wrongbtn {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Ysabeau", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    background-color:rgb(227, 225, 114);
+    color: rgb(16, 84, 167);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    transition: all 0.5s;
+    font-style: normal;
+}
+
+
+
+
+
+
+
