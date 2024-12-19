@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    /*background-color: rgb(224, 31, 31);*/
+    /*background-color: rgb(197, 190, 190);*/
+    background-color:cornsilk;
+}
+#entirepage {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+#header {
+    width: 30%;
+    position: relative;
+    justify-content: center;
+    margin-top: 200px;
+}
+/*HEADER */
+.name  {
+    justify-content: center;
+    text-align: center;
+}
+.image {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.menu {
+    z-index: 9999;
+    flex-direction: column;
+    display: flex;
+}
+.menu a {
+    font-size: 20px;
+    color: rgb(191, 13, 13);
+    text-decoration: none;
+    font-family: "Tenor Sans"; 
+    font-weight: 200;
+}
+.menu a:hover {
+    color: black;
+}
+h1 {
+    font-size: 5vw;
+    font-family: "Tenor Sans"; 
+    text-transform: uppercase;
+    color: olive;
+    font-weight: 500;
+    font-style: normal ;
+}
+h2 {
+    font-family: "Poppins";
+    font-size: 5vw;
+    font-weight: 200;
+}
+h3 {
+    font-family: "Ysabeau"; 
+    color: olive;
+    font-weight: 500;
+    font-style: normal ;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*PROJECTS AND EXERCISES SECTION*/
+#webdesign {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#webdesign {
+    background-color:#fffcf9;
+}
+
+.projectcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: powderblue;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: powderblue;
+    padding: 30px;
+}
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-color: rgb(237, 61, 21);
+}
+.div2 { 
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: rgb(150, 167, 120);
+}
+.div3 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-color: rgb(205, 194, 83);
+}
+.div4 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    background-color: rgb(113, 159, 33);
+}
+.div1,
+.div2,
+.div3,
+.div4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.div1:hover,
+.div2:hover,
+.div3:hover,
+.div4:hover {
+    background-color: rgba(38, 37, 37, 0.038);
+    transition: all 0.5s;
+}
+
+
+
+
+/* ART PAGE */
+.artgrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}    
+.art1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-image: url(art-images2/image1A.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+.art2 { grid-area: 1 / 2 / 2 / 3; 
+    background-image: url(art-images2/image2A.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.art3 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-image: url(art-images2/image3A.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.art4 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    background-image: url(art-images2/image4A.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.art5 { 
+    grid-area: 3 / 1 / 4 / 2; 
+    background-image: url(art-images2/image5A.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.art6 { 
+    grid-area: 3 / 2 / 4 / 3; 
+    background-image: url(art-images2/image6A.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.art7 { 
+    grid-area: 4 / 1 / 5 / 2; 
+    background-image: url(art-images2/image7A.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.art8 { 
+    grid-area: 4 / 2 / 5 / 3; 
+    background-image: url(art-images2/image8A.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.art9 { 
+    grid-area: 5 / 1 / 6 / 2; 
+    background-image: url(art-images2/image9A.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.art10 { 
+    grid-area: 5 / 2 / 6 / 3; 
+    background-image: url(art-images2/image10A.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*BOXES SECTION 
+#boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+}
+.box1 {
+    background-color:coral;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+.box2 {
+    background-color: rgb(255, 0, 85);
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+}*/
